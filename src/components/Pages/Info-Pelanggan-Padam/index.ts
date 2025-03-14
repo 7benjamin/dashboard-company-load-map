@@ -1,0 +1,1 @@
+export { default as InfoPelangganPadam } from '@/components/Pages/Info-Pelanggan-Padam/Info-Pelanggan-Padam.vue'

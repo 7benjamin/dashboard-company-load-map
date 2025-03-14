@@ -1,0 +1,1 @@
+export { default as ReguHistoryTrack } from '@/components/Pages/Regu-History-Track/Regu-History-Track.vue'

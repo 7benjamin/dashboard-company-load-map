@@ -1,0 +1,1 @@
+export { default as DashboardMonitoringWO } from '@/components/Pages/Dashboard-Monitoring-WO/DashboardWO.vue'

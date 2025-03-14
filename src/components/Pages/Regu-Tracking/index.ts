@@ -1,0 +1,1 @@
+export { default as ReguTracking } from '@/components/Pages/Regu-Tracking/Regu-Tracking.vue'

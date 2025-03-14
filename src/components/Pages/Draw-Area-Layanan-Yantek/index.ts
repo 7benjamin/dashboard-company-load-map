@@ -1,0 +1,1 @@
+export { default as DrawAreaLayananYantek } from '@/components/Pages/Draw-Area-Layanan-Yantek/Draw-Area-Layanan-Yantek.vue'

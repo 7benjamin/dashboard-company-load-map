@@ -1,0 +1,1 @@
+export { default as DashboardEISManagement } from '@/components/Pages/Dashboard-EIS-Management/Dashboard-EIS-Management.vue'

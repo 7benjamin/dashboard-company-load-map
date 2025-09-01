@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useAuthStore } from '@/stores/auth'
-import Icon from '@/assets/images/logo.png'
+import Icon from '@/assets/images/brandlogo.png'
 import Hero from '@/assets/images/hero.png'
 import Button from '@/components/Buttons/ButtonPrimary.vue'
 import InputText from '@/components/InputText.vue'
@@ -18,7 +18,7 @@ onMounted(() => {
         <div class="flex flex-col px-6 py-6 bg-white shadow rounded-xl shadow-gray-50">
             <div class="flex flex-row">
                 <div class="flex-grow flex-col md:mr-6 w-96">
-                    <img :src="Icon" alt="logo" class="w-36 mb-8" />
+                    <!-- <img :src="Icon" alt="logo" class="w-18 mb-8" /> -->
                     <h1 class="mb-2 font-semibold text-3xl text-dark">Login</h1>
                     <p class="mb-6 font-medium text-gray-400">Selamat datang kembali</p>
 

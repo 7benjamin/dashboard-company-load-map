@@ -35,19 +35,7 @@
                                             :key="menu.path" v-slot="{ active }">
                                             <li @click="command.openMenu(menu)"
                                                 :class="['flex flex-row cursor-pointer select-none items-center rounded-md px-3 py-2', active && 'bg-gray-900 bg-opacity-5 text-gray-900']">
-                                                <component v-if="menu.path.includes('/regu-tracking')" :is="navigationIcon[0]"
-                                                    alt="icon"
-                                                    :class="['h-6 w-6 flex-none', active ? 'opacity-100' : 'opacity-40']" />
-                                                <component v-else-if="menu.path.includes('/regu-history-track')"
-                                                    :is="navigationIcon[1]" alt="icon"
-                                                    :class="['h-6 w-6 flex-none', active ? 'opacity-100' : 'opacity-40']" />
-                                                <component v-else-if="menu.path.includes('/draw-area-layanan-yantek')"
-                                                    :is="navigationIcon[2]" alt="icon"
-                                                    :class="['h-6 w-6 flex-none', active ? 'opacity-100' : 'opacity-40']" />
-                                                <component v-else-if="menu.path.includes('/info-pelanggan-padam')"
-                                                    :is="navigationIcon[3]" alt="icon"
-                                                    :class="['h-6 w-6 flex-none', active ? 'opacity-100' : 'opacity-40']" />
-                                                <component v-else-if="menu.path.includes('/dashboard-eis-management')"
+                                                <component v-if="menu.path.includes('/dashboard-eis-management')"
                                                     :is="navigationIcon[4]" alt="icon"
                                                     :class="['h-6 w-6 flex-none', active ? 'opacity-100' : 'opacity-40']" />
                                                 <component v-else-if="menu.path.includes('/dashboard-monitoring-wo')"
@@ -74,33 +62,12 @@
                                             :key="menu.path" v-slot="{ active }">
                                             <li @click="command.openMenu(menu)"
                                                 :class="['flex flex-row cursor-pointer select-none items-center rounded-md px-3 py-2', active && 'bg-primary-500 text-white']">
-                                                <component v-if="menu.path.includes('/info-pelanggan-padam/')" :is="navigationIcon[0]"
-                                                    alt="icon"
+                                                <component v-if="menu.path.includes('/dashboard-eis-management/')"
+                                                    :is="navigationIcon[0]" alt="icon"
                                                     :class="['h-6 w-6 flex-none', active ? 'fill-white' : 'fill-gray-600']" />
-                                                <component v-else-if="menu.path.includes('/keluhan/')"
+                                                <component v-else-if="menu.path.includes('/dashboard-monitoring-wo/')"
                                                     :is="navigationIcon[1]" alt="icon"
                                                     :class="['h-6 w-6 flex-none', active ? 'fill-white' : 'fill-gray-600']" />
-                                                <component v-else-if="menu.path.includes('/dashboard-eis-management/')"
-                                                    :is="navigationIcon[2]" alt="icon"
-                                                    :class="['h-6 w-6 flex-none', active ? 'fill-white' : 'fill-gray-600']" />
-                                                <component v-else-if="menu.path.includes('/check-in-out/')"
-                                                    :is="navigationIcon[3]" alt="icon"
-                                                    :class="['h-6 w-6 flex-none', active ? 'fill-white' : 'fill-gray-600']" />
-                                                <component v-else-if="menu.path.includes('/anomali-pengaduan/')"
-                                                    :is="navigationIcon[4]" alt="icon"
-                                                    :class="['h-6 w-6 flex-none', active ? 'fill-white' : 'fill-gray-600']" />
-                                                <component v-else-if="menu.path.includes('/ctt-kwh-periksa/')"
-                                                    :is="navigationIcon[5]" alt="icon"
-                                                    :class="['h-6 w-6 flex-none', active ? 'fill-white' : 'fill-gray-600']" />
-                                                <component v-else-if="menu.path.includes('/material/')"
-                                                    :is="navigationIcon[6]" alt="icon"
-                                                    :class="['h-6 w-6 flex-none', active ? 'fill-white' : 'fill-gray-600']" />
-                                                <component v-else-if="menu.path.includes('/transaksi/')"
-                                                    :is="navigationIcon[7]" alt="icon"
-                                                    :class="['h-6 w-6 flex-none', active ? 'fill-white' : 'fill-gray-600']" />
-                                                <component v-else :is="navigationIcon[8]" alt="icon"
-                                                    :class="['h-6 w-6 flex-none', active ? 'fill-white' : 'fill-gray-600']" />
-
                                                 <div class="flex flex-col flex-1 ml-3 space-y-1">
                                                     <span
                                                         :class="[active ? 'text-white' : 'text-gray-800', 'text-sm font-medium line-clamp-1']">

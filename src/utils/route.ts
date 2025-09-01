@@ -2,22 +2,14 @@
 import type { MenuItemModel } from '../types/menu'
 import type { RouteRecordRaw } from 'vue-router'
 import {
-    IconLightningSlash,
     IconMonitor,
-    IconPolygon,
-    IconToolbox,
-    IconVector1,
-    IconVector
+    IconPolygon
 
 } from '@/utils/icons'
 
 export const navigationIcon = [
-    IconVector,
-    IconVector1,
     IconPolygon,
-    IconLightningSlash,
     IconMonitor,
-    IconToolbox
 ]
 
 const convertToDashedString = (input: string): string => {

@@ -8,11 +8,6 @@ import NotFoundView from '@/views/NotFoundView.vue'
 import WelcomePage from '@/components/Pages/Welcome.vue'
 import { DashboardEISManagement } from '@/components/Pages/Dashboard-EIS-Management'
 import { DashboardMonitoringWO } from '@/components/Pages/Dashboard-Monitoring-WO'
-import { ReguTracking } from '@/components/Pages/Regu-Tracking'
-import { ReguHistoryTrack } from '@/components/Pages/Regu-History-Track'
-import { InfoPelangganPadam } from '@/components/Pages/Info-Pelanggan-Padam'
-import { DrawAreaLayananYantek } from '@/components/Pages/Draw-Area-Layanan-Yantek'
-import EmptyPage from '@/components/Pages/EmptyPage.vue'
 import qs from 'qs'
 
 export const routes: RouteRecordRaw[] = [
@@ -25,26 +20,6 @@ export const routes: RouteRecordRaw[] = [
         path: '',
         name: 'Home Page',
         component: WelcomePage,
-      },
-      {
-        path: 'regu-tracking',
-        name: 'Regu Tracking',
-        component: ReguTracking,
-      },
-      {
-        path: 'regu-history-track',
-        name: 'Regu History Track',
-        component: ReguHistoryTrack,
-      },
-      {
-        path: 'draw-area-layanan-yantek',
-        name: 'Draw Area Layanan Yantek',
-        component: DrawAreaLayananYantek,
-      },
-      {
-        path: 'info-pelanggan-padam',
-        name: 'Info Pelanggan Padam',
-        component: InfoPelangganPadam,
       },
       {
         path: 'dashboard-eis-management',

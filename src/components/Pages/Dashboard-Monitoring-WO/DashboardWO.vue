@@ -9,7 +9,8 @@
                     <img class="w-auto h-auto" :src="IconRepeatGreen"/>
                     <h1 class="text-sm font-bold text-dark text-center">Auto Dispatch</h1>
                 </div>
-              <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.autoDispatchManual.total ?? 0 }}</h2>
+              <!-- <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.autoDispatchManual.total ?? 0 }}</h2> -->
+              <h2 class="text-2xl font-medium text-dark text-center">7</h2>
             </div>
           </div>
           <div class="flex mt-8">
@@ -18,14 +19,16 @@
                     <img class="w-auto h-auto mr-1" :src="IconHandSwipeRightYellow"/>
                     <h1 class="text-sm font-bold text-dark text-center">Manual</h1>
                 </div>
-              <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.autoDispatchManual.manual ?? 0 }}</h2>
+              <!-- <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.autoDispatchManual.manual ?? 0 }}</h2> -->
+              <h2 class="text-2xl font-medium text-dark text-center">5</h2>
             </div>
           </div>
         </div>
         <div class="flex-grow my-3 mx-3 w-1/4">
           <div class="flex flex-col bg-green-100 rounded-t-2xl mx-3 rounded-b-2xl w-64 h-full items-center justify-center">
             <h1 class="text-sm font-bold text-dark text-center">Total</h1>
-            <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.autoDispatchManual.total ?? 0 }}</h2>
+            <!-- <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.autoDispatchManual.total ?? 0 }}</h2> -->
+            <h2 class="text-2xl font-medium text-dark text-center">12</h2>
           </div>
         </div>
         <div class="flex-grow mx-3 w-1/4">
@@ -35,17 +38,20 @@
                     <img class="w-auto h-auto" :src="IconPlugChargingRed"/>
                     <h1 class="text-sm font-bold text-dark text-center">Gangguan TM</h1>
                 </div>
-              <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.gangguanTm.gangguanTm ?? 0 }}</h2>
+              <!-- <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.gangguanTm.gangguanTm ?? 0 }}</h2> -->
+              <h2 class="text-2xl font-medium text-dark text-center">9</h2>
             </div>
           </div>
           <div class="flex-grow my-3 mt-8">
             <div class="bg-slate-50 px-3 rounded-t-2xl rounded-b-2xl py-3 my-1 mx-3 w-64 h-16">
               <h1 class="text-sm font-bold text-dark text-center">Gardu Padam</h1>
-              <h2 v-if="result" class="text-xl font-medium text-red-400 text-center">{{result.dashboardMonitoringWo.gangguanTm.garduPadam ?? 0 }}</h2>
+              <!-- <h2 v-if="result" class="text-xl font-medium text-red-400 text-center">{{result.dashboardMonitoringWo.gangguanTm.garduPadam ?? 0 }}</h2> -->
+              <h2 class="text-xl font-medium text-red-400 text-center">7</h2>
             </div>
             <div class="bg-slate-50 px-3 rounded-t-2xl rounded-b-2xl py-3 mx-3 my-3 w-64 h-16">
               <h1 class="text-sm font-bold text-dark text-center">Gardu Nyala</h1>
-              <h2 v-if="result" class="text-xl font-medium text-blue-400 text-center">{{result.dashboardMonitoringWo.gangguanTm.garduNyala ?? 0 }}</h2>
+              <!-- <h2 v-if="result" class="text-xl font-medium text-blue-400 text-center">{{result.dashboardMonitoringWo.gangguanTm.garduNyala ?? 0 }}</h2> -->
+              <h2 class="text-xl font-medium text-blue-400 text-center">20</h2>
             </div>
           </div>
         </div>
@@ -53,11 +59,13 @@
           <div class="flex-grow my-3">
             <div class="bg-slate-50 px-3 rounded-t-2xl rounded-b-2xl py-3 my-1 mx-3 w-64 h-16">
               <h1 class="text-sm font-bold text-dark text-center">Gardu Padam</h1>
-              <h2 v-if="result" class="text-xl font-medium text-red-400  text-center">{{result.dashboardMonitoringWo.padamTerencana.garduPadam ?? 0 }}</h2>
+              <!-- <h2 v-if="result" class="text-xl font-medium text-red-400  text-center">{{result.dashboardMonitoringWo.padamTerencana.garduPadam ?? 0 }}</h2> -->
+              <h2 class="text-xl font-medium text-red-400  text-center">2</h2>
             </div>
             <div class="bg-slate-50 px-3 rounded-t-2xl rounded-b-2xl py-3 mx-3 my-3 w-64 h-16">
               <h1 class="text-sm font-bold text-dark text-center">Gardu Nyala</h1>
-              <h2 v-if="result" class="text-xl font-medium text-blue-400  text-center">{{result.dashboardMonitoringWo.padamTerencana.garduNyala ?? 0 }}</h2>
+              <!-- <h2 v-if="result" class="text-xl font-medium text-blue-400  text-center">{{result.dashboardMonitoringWo.padamTerencana.garduNyala ?? 0 }}</h2> -->
+              <h2 class="text-xl font-medium text-blue-400  text-center">25</h2>
             </div>
           </div>
           <div class="flex my-3 mt-8">
@@ -66,7 +74,8 @@
                     <img class="w-auto h-auto" :src="IconPlugsYellow"/>
                     <h1 class="text-sm font-bold text-dark text-center">Padam Terencana</h1>
                 </div>
-              <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.padamTerencana.padamTerencana ?? 0 }}</h2>
+              <!-- <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.padamTerencana.padamTerencana ?? 0 }}</h2> -->
+              <h2 class="text-2xl font-medium text-dark text-center">7</h2>
             </div>
           </div>
         </div>
@@ -91,13 +100,15 @@
           <div class="flex my-3">
             <div class="bg-blue-200 px-3 rounded-t-2xl rounded-b-2xl py-2 mx-3 w-64 h-16">
               <h1 class="text-sm font-bold text-dark text-center">Regu Aktif</h1>
-              <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.regu.reguAktif ?? 0 }}</h2>
+              <!-- <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.regu.reguAktif ?? 0 }}</h2> -->
+              <h2 class="text-2xl font-medium text-dark text-center">27</h2>
             </div>
           </div>
           <div class="flex my-3">
             <div class="bg-blue-200 px-3 rounded-t-2xl rounded-b-2xl py-2 mx-3 w-64 h-16">
               <h1 class="text-sm font-bold text-dark text-center">Regu Non Available</h1>
-              <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.regu.reguNonAvailable ?? 0 }}</h2>
+              <!-- <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.regu.reguNonAvailable ?? 0 }}</h2> -->
+              <h2 class="text-2xl font-medium text-dark text-center">6</h2>
             </div>
           </div>
         </div>
@@ -105,13 +116,15 @@
           <div class="flex my-3">
             <div class="bg-blue-200 px-3 rounded-t-2xl rounded-b-2xl py-2 mx-3 w-64 h-16">
               <h1 class="text-sm font-bold text-dark text-center">Regu Available</h1>
-              <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.regu.reguAvailable ?? 0 }}</h2>
+              <!-- <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.regu.reguAvailable ?? 0 }}</h2> -->
+              <h2 class="text-2xl font-medium text-dark text-center">23</h2>
             </div>
           </div>
           <div class="flex my-3">
             <div class="bg-blue-200 px-3 rounded-t-2xl rounded-b-2xl py-2 mx-3 w-64 h-16">
               <h1 class="text-sm font-bold text-dark text-center">Regu PO</h1>
-              <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.regu.reguPo ?? 0 }}</h2>
+              <!-- <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.regu.reguPo ?? 0 }}</h2> -->
+              <h2 class="text-2xl font-medium text-dark text-center">7</h2>
             </div>
           </div>
         </div>
@@ -119,13 +132,15 @@
           <div class="flex my-3">
             <div class="bg-green-50 px-3 rounded-t-2xl rounded-b-2xl py-2 mx-3 w-64 h-16">
               <h1 class="text-sm font-bold text-dark text-center">Marking</h1>
-              <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.status.marking ?? 0 }}</h2>
+              <!-- <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.status.marking ?? 0 }}</h2> -->
+              <h2 class="text-2xl font-medium text-dark text-center">5</h2>
             </div>
           </div>
           <div class="flex my-3">
             <div class="bg-green-50 px-3 rounded-t-2xl rounded-b-2xl py-2 mx-3 w-64 h-16">
               <h1 class="text-sm font-bold text-dark text-center">Antrian</h1>
-              <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.status.antrian ?? 0 }}</h2>
+              <!-- <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.status.antrian ?? 0 }}</h2> -->
+              <h2 class="text-2xl font-medium text-dark text-center">3</h2>
             </div>
           </div>
         </div>
@@ -133,13 +148,15 @@
           <div class="flex my-3">
             <div class="bg-green-50 px-3 rounded-t-2xl rounded-b-2xl py-2 mx-3 w-64 h-16">
               <h1 class="text-sm font-bold text-dark text-center">Handle</h1>
-              <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.status.handle ?? 0 }}</h2>
+              <!-- <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.status.handle ?? 0 }}</h2> -->
+              <h2 class="text-2xl font-medium text-dark text-center">5</h2>
             </div>
           </div>
           <div class="flex my-3">
             <div class="bg-green-50 px-3 rounded-t-2xl rounded-b-2xl py-2 mx-3 w-64 h-16">
               <h1 class="text-sm font-bold text-dark text-center">Selesai</h1>
-              <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.status.selesai ?? 0 }}</h2>
+              <!-- <h2 v-if="result" class="text-2xl font-medium text-dark text-center">{{result.dashboardMonitoringWo.status.selesai ?? 0 }}</h2> -->
+              <h2 class="text-2xl font-medium text-dark text-center">31</h2>
             </div>
           </div>
         </div>
@@ -188,7 +205,7 @@ query dashboardMonitoringWo {
   }
 }
 `
-const { result, loading, error } = useQuery(QUERY_DASHBOARD_WO)
+// const { result, loading, error } = useQuery(QUERY_DASHBOARD_WO)
 
 
 

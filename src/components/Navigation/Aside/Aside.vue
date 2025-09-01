@@ -10,7 +10,7 @@ import {
 import { XMarkIcon } from '@heroicons/vue/24/outline'
 import { useMenuStore } from '@/stores/menu'
 import { IconBars3 } from '@/utils/icons'
-import IconApp from '@/assets/images/logo.png'
+import IconApp from '@/assets/images/brandlogo.png'
 import AsideMenuSingle from '@/components/Navigation/Aside/AsideMenuSingle.vue'
 import AsideMenuMultiple from '@/components/Navigation/Aside/AsideMenuMultiple.vue'
 
@@ -61,11 +61,11 @@ const closeSideBar = () => menu.toggleSidebar()
                                 </button>
                             </div>
                         </TransitionChild>
-                        <div class="flex items-center flex-shrink-0 px-4">
+                        <!-- <div class="flex items-center flex-shrink-0 px-4">
                             <RouterLink to="/">
-                                <img class="w-auto h-12 md:h-16" :src="IconApp" alt="PLN" />
+                                <img class="w-auto h-12 md:h-16" :src="IconApp" alt="listrik" />
                             </RouterLink>
-                        </div>
+                        </div> -->
                         <div class="flex-1 h-0 mt-5 overflow-y-auto">
                             <nav class="px-2 space-y-1">
                                 <template v-for="item in menu.navigation" :key="item.name">
@@ -97,9 +97,9 @@ const closeSideBar = () => menu.toggleSidebar()
                 <IconBars3 class="w-6 h-6 fill-gray-600" />
 
             </button>
-            <RouterLink to="/home">
-                <img class="w-auto h-11" :src="IconApp" alt="PLN" />
-            </RouterLink>
+            <!-- <RouterLink to="/home">
+                <img class="w-auto h-11" :src="IconApp" alt="listrik" />
+            </RouterLink> -->
         </div>
         <span v-if="menu.sidebarShowed" class="px-4 mt-4 text-sm font-semibold text-primary-800">
             Menu

@@ -25,17 +25,9 @@
                         <div @click="command.openMenu(menu)" class="group">
                             <div
                                 class="flex flex-row items-center justify-between px-3 py-2 rounded-md cursor-pointer select-none group-hover:bg-primary-500 group-hover:text-white group-hover:bg-opacity-80">
-                                <component v-if="menu.path.includes('/regu-tracking')" :is="navigationIcon[0]" alt="icon"
-                                    :class="['w-8 h-8 fill-gray-600 group-hover:fill-white flex']" />
-                                <component v-else-if="menu.path.includes('/regu-history-track')" :is="navigationIcon[1]" alt="icon"
-                                    :class="['w-8 h-8 fill-gray-600 group-hover:fill-white flex']" />
-                                <component v-else-if="menu.path.includes('/draw-area-layanan-yantek')" :is="navigationIcon[2]" alt="icon"
-                                    :class="['w-8 h-8 fill-gray-600 group-hover:fill-white flex']" />
-                                <component v-else-if="menu.path.includes('/info-pelanggan-padam')" :is="navigationIcon[3]"
+                                <component v-if="menu.path.includes('/dashboard-eis-management')" :is="navigationIcon[0]"
                                     alt="icon" :class="['w-8 h-8 fill-gray-600 group-hover:fill-white flex']" />
-                                <component v-else-if="menu.path.includes('/dashboard-eis-management')" :is="navigationIcon[4]"
-                                    alt="icon" :class="['w-8 h-8 fill-gray-600 group-hover:fill-white flex']" />
-                                <component v-else-if="menu.path.includes('/dashboard-monitoring-wo')" :is="navigationIcon[5]"
+                                <component v-else-if="menu.path.includes('/dashboard-monitoring-wo')" :is="navigationIcon[1]"
                                     alt="icon" :class="['w-8 h-8 fill-gray-600 group-hover:fill-white flex']" />
 
                                 <div class="flex flex-col items-start flex-1 w-full pl-3 space-y-1">
@@ -66,7 +58,7 @@
 import { MagnifyingGlassIcon } from '@heroicons/vue/20/solid';
 import { computed, ref } from 'vue'
 import { useCommandPalattesStore } from '@/stores/command'
-import IconApp from '@/assets/images/logo.png'
+import IconApp from '@/assets/images/brandlogo.png'
 import { type RouteRecordRaw } from 'vue-router'
 import { routes, extractLeafRoutes } from '@/router'
 import { navigationIcon } from '@/utils/route';
